@@ -14,13 +14,16 @@ public class ServiceCalculator {
     public String calculateSum(int num1, int num2) {
         return String.valueOf(num1 + num2);
     }
-    public String calculateMinus( int num1, int num2) {
+
+    public String calculateMinus(int num1, int num2) {
         return String.valueOf(num1 - num2);
     }
-    public String calculateMultiply( int num1, int num2) {
+
+    public String calculateMultiply(int num1, int num2) {
         return String.valueOf(num1 * num2);
     }
-    public String calculateDivide( int num1, int num2) {
+
+    public String calculateDivide(int num1, int num2) {
         return String.valueOf(num1 / num2);
     }
 }
