@@ -26,7 +26,7 @@ public class CalculatorController {
         if (num1 == null || num2 == null) {
             return "Не передан параметр";
         }
-        return "сумма:[%s]".formatted(serviceCalculator.calculateSum(num1 , num2));
+        return "сумма:[%s]".formatted(serviceCalculator.calculateSum(num1, num2));
 
     }
 
@@ -36,7 +36,7 @@ public class CalculatorController {
         if (num1 == null || num2 == null) {
             return "Не передан параметр";
         }
-        return "разницаЖ[%s]".formatted(serviceCalculator.calculateMinus(num1 , num2));
+        return "разницаЖ[%s]".formatted(serviceCalculator.calculateMinus(num1, num2));
     }
 
     @GetMapping("/multiply")
@@ -45,7 +45,7 @@ public class CalculatorController {
         if (num1 == null || num2 == null) {
             return "Не передан параметр";
         }
-        return "умножение:[%s]".formatted(serviceCalculator.calculateMultiply(num1 , num2));
+        return "умножение:[%s]".formatted(serviceCalculator.calculateMultiply(num1, num2));
     }
 
     @GetMapping("/divide")
@@ -56,7 +56,7 @@ public class CalculatorController {
         }
         if (num2 == 0)
             return "На ноль делить нельзя";
-        return "деление:[%s]".formatted(serviceCalculator.calculateDivide(num1 , num2));
+        return "деление:[%s]".formatted(serviceCalculator.calculateDivide(num1, num2));
     }
 
 }
